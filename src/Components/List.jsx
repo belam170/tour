@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import data from './Data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
 function List() {
     const [tours,setTours] = useState(data)
     const[readMore,setReadMore] = useState(false)
@@ -12,11 +15,9 @@ function List() {
     }
   return (
     <div className='tainer'>
-        <div>
-        </div>
     <div className='box'>
     <h2>Our Tours</h2>
-    {tours.length === 0 && <div>Nothing to display</div>}
+    {tours.length === 0 && <div><FontAwesomeIcon icon={faSearch} />Nothing to display</div>}
         {tours.map((tour)=> (
             <div key={tour.id} >
                 <div className='con'>
