@@ -16,6 +16,7 @@ function List() {
         </div>
     <div className='box'>
     <h2>Our Tours</h2>
+    {tours.length === 0 && <div>Nothing to display</div>}
         {tours.map((tour)=> (
             <div key={tour.id} >
                 <div className='con'>
