@@ -14,6 +14,7 @@
   margin-top: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
+  position: relative;
 }
 .con img{
   width: 100%;
@@ -24,6 +25,10 @@
   color: #0047AB;
   cursor: pointer;
 }
+.con p{
+  color: #617D98;
+}
+
 .but{
   display: flex;
   justify-content: center;
@@ -43,8 +48,9 @@
   border-radius: 0.3em;
 
 }
+
 .but button:hover{
-  background-color: aliceblue;
+  background-color: #fffafa;
 }
 h2{
   font-size: 50px;
@@ -53,4 +59,75 @@ h2{
 }
 h1{
   font-size: 32px;
+}
+
+
+.no-tours-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #555;
+}
+
+.no-tours-icon {
+  font-size: 50px;
+  color: #888; 
+}
+
+.no-tours-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 665px) {
+   .con{
+    width: 130%;
+    height: auto;
+   }
+   .but button{
+    width: auto;
+  font-size: 10px;
+  padding: 10px;
+   }
+   h2{
+    font-size: 35px;
+   }
+   h1{
+    font-size: 25px;
+   }
+   .con p{
+     font-size: 15px;
+   }
+}
+
+.con:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px; 
+  background-color: #0047AB;
+  border-radius: 0 0 0 35px;
+}
+
+.price-circle {
+  position: absolute;
+  bottom: 10px; 
+  right: 10px; 
+  width: 40px; 
+  height: 40px; 
+  background-color: #0047AB; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  font-size: 16px; 
+  text-align: center;
+  font-weight: bold; 
+  padding: 0.1px;
+
 }
