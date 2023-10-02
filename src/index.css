@@ -1,69 +1,48 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.box{
+  width: 50%;
+  height: auto;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.tainer{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.con{
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  height: 30%;
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.con img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.con span{
+  color: #0047AB;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+.but{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+.but button{
+  width: 25%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #EE4B2B;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #800020;
+  font-size: 15px;
+  border-radius: 0.3em;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+.but button:hover{
+  background-color: aliceblue;
 }
