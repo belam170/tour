@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
 import data from './Data'
 function List() {
-    const [tours] = useState(data)
+    const [tours,setTours] = useState(data)
     const[readMore,setReadMore] = useState(false)
+
+
+    const handleDelete = (id) => {
+        setTours(oldTours => {
+            return oldTours.filter(tour => tour.id !== id)
+        })
+    }
   return (
     <div className='tainer'>
         <div>
@@ -17,7 +24,7 @@ function List() {
               {readMore ? tour.des : `${tour.des.substring(0,200)}...`}
               <span onClick={()=> setReadMore(!readMore)}>{readMore ? 'Show Less' : 'Show more'}</span>
               <div className='but'> 
-              <button>Not Interested</button>
+              <button onClick={()=> handleDelete(tour.id)}>Not Interested</button>
               </div>
             </div>
             </div>

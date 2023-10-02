@@ -46,3 +46,11 @@
 .but button:hover{
   background-color: aliceblue;
 }
+h2{
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline 5px  #0047AB;
+}
+h1{
+  font-size: 32px;
+}
